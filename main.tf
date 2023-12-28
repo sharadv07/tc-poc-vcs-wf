@@ -1,10 +1,10 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-demo-pester"
-  location = "westeurope"
+  name     = "rg-demo-vcs-wf"
+  location = "eastus2"
 }
 
 resource "azurerm_storage_account" "storage" {
-  name                      = "sademotestpester1" #"sademotestpester123"
+  name                      = "sademotesttcvcs" #"sademotestpester123"
   resource_group_name       = azurerm_resource_group.rg.name
   location                  = azurerm_resource_group.rg.location
   account_tier              = "Standard"
